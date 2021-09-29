@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_touch_radius">20dp</dimen>
+    <dimen name="default_stroke_width">4dp</dimen>
+    <dimen name="default_knob_radius">10dp</dimen>
+    <dimen name="default_orbit_gap">22dp</dimen>
+    <dimen name="default_value_text_size">12sp</dimen>
+    <dimen name="default_legends_text_size">14sp</dimen>
+</resources>

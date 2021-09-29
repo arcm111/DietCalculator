@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#503971</color>
+    <color name="colorPrimaryDark">#3a2a51</color>
+    <color name="color_secondary">#CBC8D1</color>
+    <color name="colorAccent">#80c5ff</color>
+    <color name="colorAccent_darker">#3E7DB3</color>
+    <color name="ic_launcher_background">#1D1529</color>
+
+    <color name="gray_200">#E4E4E4</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="error">#d9576f</color>
+    <color name="background">#f0f0f0</color>
+    <color name="background_dialog">#fbfbfb</color>
+    <color name="background_status_bar">#FAFAFA</color>
+    <color name="background_black_transparent">#99000000</color>
+    <color name="purple_light">#815CB5</color>
+    <color name="purple">#7F5AB1</color>
+    <color name="purple_dark">#5B4180</color>
+    <color name="purple_darker">#3a2a51</color>
+    <color name="purple_darkest">#1D1529</color>
+    <color name="cyan_light">#80c5ff</color>
+    <color name="gray_light">#f2f2f2</color>
+    <color name="background_light_gray_blue">#dfe6ee</color>
+    <color name="text_dark">#1a1a1a</color>
+    <color name="text_dark_grey">#404040</color>
+    <color name="bottom_menu_inactive">#BBB1C8</color>
+    <color name="bottom_menu_active">#655D71</color>
+    <color name="group_green">#40815F</color>
+    <color name="group_red">#BD4B4C</color>
+    <color name="group_purple">#644575</color>
+    <color name="group_orange">#D15F4B</color>
+    <color name="group_blue">#447595</color>
+    <color name="nutrient_calories">#483f40</color>
+    <color name="nutrient_carbohydrates">#7b5e8a</color>
+    <color name="nutrients_sugar">#9c607c</color>
+    <color name="nutrients_fibre">#5c4e67</color>
+    <color name="nutrients_fat">#df9951</color>
+    <color name="nutrients_saturated_fat">#da6b4f</color>
+    <color name="nutrients_protein">#c44647</color>
+    <color name="colour_purple_toolbar">#3F2E59</color>
+    <color name="text_purble_dark">#987FBA</color>
+</resources>

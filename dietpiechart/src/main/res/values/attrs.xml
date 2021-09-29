@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DietPieChart">
+        <attr name="dpc_sectors_count" format="integer"/>
+        <attr name="dpc_adjustable" format="boolean"/>
+        <attr name="dpc_knob_radius" format="dimension"/>
+        <attr name="dpc_stroke_width" format="dimension"/>
+        <attr name="dpc_orbits_gap" format="dimension"/>
+        <attr name="dpc_values" format="reference"/>
+        <attr name="dpc_labels" format="reference"/>
+        <attr name="dpc_fill_colours" format="reference"/>
+        <attr name="dpc_stroke_colour" format="color"/>
+        <attr name="dpc_knob_active_colour" format="color"/>
+        <attr name="dpc_Knob_inactive_colour" format="color"/>
+        <attr name="dpc_knob_pressed_colour" format="color"/>
+        <attr name="dpc_value_text_colour" format="color"/>
+        <attr name="dpc_legends_text_colour" format="color"/>
+        <attr name="dpc_value_text_size" format="dimension" />
+        <attr name="dpc_legends_text_size" format="dimension" />
+    </declare-styleable>
+</resources>

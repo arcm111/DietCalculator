@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/IntroBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SetupActivity.ActivitiesLevelFragment">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_your_physical_activities_level"
+        android:textAlignment="center"
+        android:textColor="@color/text_dark" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_physical_activities_image"
+        android:contentDescription="@string/physical_activities_image_description" />
+
+    <RadioGroup
+        android:id="@+id/activity_factor_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/sedentary_radioButton"
+            style="@style/ActivitiesRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/sedentary" />
+
+        <RadioButton
+            android:id="@+id/light_radioButton"
+            style="@style/ActivitiesRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/light" />
+
+        <RadioButton
+            android:id="@+id/moderate_radioButton"
+            style="@style/ActivitiesRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/moderate" />
+
+        <RadioButton
+            android:id="@+id/high_radioButton"
+            style="@style/ActivitiesRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/high" />
+
+        <RadioButton
+            android:id="@+id/extreme_radioButton"
+            style="@style/ActivitiesRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/extreme" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activities_level_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/activity_sedentary"
+        android:textAlignment="center"
+        android:textColor="@color/text_dark" />
+</LinearLayout>

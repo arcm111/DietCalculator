@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/IntroBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SetupActivity.CaloriesFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/targets_image_description"
+        android:src="@drawable/ic_target_image" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/choose_daily_calories"
+        android:textAlignment="center"
+        android:textColor="@color/text_dark" />
+
+    <com.arcm.scalenumberpicker.ScaleNumberPicker
+        android:id="@+id/calories_snp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:snp_max_value="6000"
+        app:snp_subdivisions_count_per_division="10"
+        app:snp_ticks_count_per_subdivision="1"
+        app:snp_unit_label="kcal"
+        app:snp_unit_label_margin="10dp"
+        app:snp_unit_label_text_colour="#BBBBBB"
+        app:snp_unit_label_text_size="12sp"
+        app:snp_value_text_margin="6dp"
+        app:snp_value_text_size="24sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/choose_daily_weight_change"
+        android:textAlignment="center"
+        android:textColor="@color/text_dark" />
+
+    <com.arcm.scalenumberpicker.ScaleNumberPicker
+        android:id="@+id/weight_snp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:snp_max_value="10"
+        app:snp_min_value="-10"
+        app:snp_subdivisions_count_per_division="10"
+        app:snp_tick_value="0.1"
+        app:snp_ticks_count_per_subdivision="1"
+        app:snp_unit_label="kg"
+        app:snp_unit_label_margin="10dp"
+        app:snp_unit_label_text_colour="#BBBBBB"
+        app:snp_unit_label_text_size="12sp"
+        app:snp_value="0"
+        app:snp_value_text_margin="6dp"
+        app:snp_value_text_size="24sp" />
+
+</LinearLayout>

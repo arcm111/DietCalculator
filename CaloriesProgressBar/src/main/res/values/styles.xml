@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CaloriesProgressBar">
+        <item name="cpb_primary_text_colour">@color/primary_text</item>
+        <item name="cpb_secondary_text_colour">@color/secondary_text</item>
+        <item name="cpb_calories_text_size">@dimen/calories_text_size</item>
+        <item name="cpb_unit_text_size">@dimen/unit_text_size</item>
+        <item name="cpb_label_text_size">@dimen/label_text_size</item>
+        <item name="cpb_calories_icon">@drawable/ic_calories_icon</item>
+        <item name="cpb_icon_size">@dimen/icon_size</item>
+        <item name="cpb_progress_background_colour">@color/progress_background</item>
+        <item name="cpb_progress_colour">@color/progress</item>
+        <item name="cpb_progress_bar_width">@dimen/progress_bar_width</item>
+        <item name="cpb_inner_padding">@dimen/inner_padding</item>
+        <item name="cpb_unit_margin">@dimen/unit_text_margin</item>
+        <item name="cpb_value_margin">@dimen/value_text_margin</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="NutrientsGraph">
+        <item name="ng_rem_val_margin">@dimen/rem_val_margin</item>
+        <item name="ng_bar_height">@dimen/bar_height</item>
+        <item name="ng_bar_width">@dimen/bar_width</item>
+        <item name="ng_spacing">@dimen/spacing</item>
+        <item name="ng_corner_radius">@dimen/corner_radius</item>
+        <item name="ng_icon_size">@dimen/icon_size</item>
+        <item name="ng_icon_margin">@dimen/icon_margin</item>
+        <item name="ng_label_margin">@dimen/label_margin</item>
+        <item name="ng_target_val_margin">@dimen/target_val_margin</item>
+        <item name="ng_text_size">@dimen/text_size</item>
+        <item name="ng_active_text_colour">@color/active_text_colour</item>
+        <item name="ng_inactive_text_colour">@color/inactive_text_colour</item>
+        <item name="ng_value_text_colour">@color/value_text_colour</item>
+        <item name="ng_bar_cont_colour">@color/bar_cont_colour</item>
+        <item name="ng_progress_colour">@color/progress_colour</item>
+        <item name="ng_progress_overflow_colour">@color/progress_overflow_colour</item>
+        <item name="ng_values">@array/example_values</item>
+        <item name="ng_target_values">@array/example_target_values</item>
+    </style>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_darkest"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.SettingsActivity.MacrosSettingsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/navigation_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colour_purple_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:title="@string/targets_settings"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:titleTextColor="@android:color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/IntroBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background_light_gray_rounded_bottom_corners"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigation_toolbar"
+        tools:context=".fragments.SetupActivity.CaloriesFragment">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/choose_daily_calories"
+            android:textAlignment="center"
+            android:textColor="@color/text_dark"
+            app:layout_constraintBottom_toTopOf="@+id/calories_snp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/targets_image_description"
+            android:src="@drawable/ic_target_image"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.arcm.scalenumberpicker.ScaleNumberPicker
+            android:id="@+id/calories_snp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:snp_max_value="6000"
+            app:snp_subdivisions_count_per_division="10"
+            app:snp_ticks_count_per_subdivision="1"
+            app:snp_unit_label="kcal"
+            app:snp_unit_label_margin="10dp"
+            app:snp_unit_label_text_colour="#BBBBBB"
+            app:snp_unit_label_text_size="12sp"
+            app:snp_value_text_margin="6dp"
+            app:snp_value_text_size="24sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/choose_daily_weight_change"
+            android:textAlignment="center"
+            android:textColor="@color/text_dark"
+            app:layout_constraintBottom_toTopOf="@+id/weight_snp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.arcm.scalenumberpicker.ScaleNumberPicker
+            android:id="@+id/weight_snp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:snp_max_value="10"
+            app:snp_min_value="-10"
+            app:snp_subdivisions_count_per_division="10"
+            app:snp_tick_value="0.1"
+            app:snp_ticks_count_per_subdivision="1"
+            app:snp_unit_label="kg"
+            app:snp_unit_label_margin="10dp"
+            app:snp_unit_label_text_colour="#BBBBBB"
+            app:snp_unit_label_text_size="12sp"
+            app:snp_value="0"
+            app:snp_value_text_margin="6dp"
+            app:snp_value_text_size="24sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorAccent_darker"
+        android:text="@string/save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

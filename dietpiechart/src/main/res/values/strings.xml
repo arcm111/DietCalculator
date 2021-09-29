@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PieChart</string>
+    <string-array name="default_labels">
+        <item>Carbohydrates</item>
+        <item>Protein</item>
+        <item>Fat</item>
+    </string-array>
+    <integer-array name="default_values">
+        <item>45</item>
+        <item>25</item>
+        <item>30</item>
+    </integer-array>
+</resources>

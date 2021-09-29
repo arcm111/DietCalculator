@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rem_val_margin">20dp</dimen>
+    <dimen name="bar_height">160dp</dimen>
+    <dimen name="bar_width">30dp</dimen>
+    <dimen name="spacing">20dp</dimen>
+    <dimen name="corner_radius">6dp</dimen>
+    <dimen name="icon_size">34dp</dimen>
+    <dimen name="icon_margin">10dp</dimen>
+    <dimen name="label_margin">6dp</dimen>
+    <dimen name="target_val_margin">1dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CaloriesProgressBar">
+        <attr name="cpb_primary_text_colour" format="color" />
+        <attr name="cpb_secondary_text_colour" format="color" />
+        <attr name="cpb_calories_text_size" format="dimension" />
+        <attr name="cpb_unit_text_size" format="dimension" />
+        <attr name="cpb_label_text_size" format="dimension" />
+        <attr name="cpb_calories_icon" format="reference|integer" />
+        <attr name="cpb_icon_size" format="dimension" />
+        <attr name="cpb_progress_background_colour" format="color" />
+        <attr name="cpb_progress_colour" format="color" />
+        <attr name="cpb_progress_bar_width" format="dimension" />
+        <attr name="cpb_inner_padding" format="dimension" />
+        <attr name="cpb_unit_margin" format="dimension" />
+        <attr name="cpb_value" format="integer" />
+        <attr name="cpb_max_value" format="integer" />
+        <attr name="cpb_value_margin" format="dimension" />
+    </declare-styleable>
+</resources>

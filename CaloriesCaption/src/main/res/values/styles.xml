@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CaloriesCaption">
+        <item name="cc_values_textSize">@dimen/values_textSize</item>
+        <item name="cc_unit_textSize">@dimen/unit_textSize</item>
+        <item name="cc_labels_textSize">@dimen/labels_textSize</item>
+        <item name="cc_primary_colour">@color/colour_primary</item>
+        <item name="cc_secondary_colour">@color/colour_secondary</item>
+        <item name="cc_target_icon">@drawable/ic_target</item>
+        <item name="cc_unit_margin">@dimen/unit_margin</item>
+        <item name="cc_divider_width">@dimen/divider_width</item>
+        <item name="cc_divider_margin">@dimen/divider_margin</item>
+        <item name="cc_icon_padding">@dimen/icon_padding</item>
+        <item name="cc_icon_size">@dimen/icon_size</item>
+        <item name="cc_consumed_value">1200</item>
+        <item name="cc_target_value">3400</item>
+    </style>
+</resources>

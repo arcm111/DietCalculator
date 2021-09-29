@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pie_section_purple">#503971</color>
+    <color name="pie_section_red">#d25253</color>
+    <color name="pie_section_blue">#7fc4ff</color>
+    <color name="stroke_purple_dark">#3c2a52</color>
+    <color name="knob_active_colour">#FFFFFF</color>
+    <color name="knob_inactive_colour">#CCCCCC</color>
+    <color name="knob_pressed_colour">#FFE1B6</color>
+    <color name="sector_text_colour">#FFFFFF</color>
+    <color name="legends_text_colour">#000000</color>
+    <array name="default_sectors_colours">
+        <item>@color/pie_section_purple</item>
+        <item>@color/pie_section_red</item>
+        <item>@color/pie_section_blue</item>
+    </array>
+</resources>

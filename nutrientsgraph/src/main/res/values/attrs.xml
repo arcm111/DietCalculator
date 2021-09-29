@@ -1,0 +1,22 @@
+<resources>
+    <declare-styleable name="NutrientsGraph">
+        <attr name="ng_rem_val_margin" format="dimension" />
+        <attr name="ng_bar_height" format="dimension" />
+        <attr name="ng_bar_width" format="dimension" />
+        <attr name="ng_spacing" format="dimension" />
+        <attr name="ng_corner_radius" format="dimension" />
+        <attr name="ng_icon_size" format="dimension" />
+        <attr name="ng_icon_margin" format="dimension" />
+        <attr name="ng_label_margin" format="dimension" />
+        <attr name="ng_target_val_margin" format="dimension" />
+        <attr name="ng_text_size" format="dimension" />
+        <attr name="ng_active_text_colour" format="color" />
+        <attr name="ng_inactive_text_colour" format="color" />
+        <attr name="ng_value_text_colour" format="color" />
+        <attr name="ng_bar_cont_colour" format="color" />
+        <attr name="ng_progress_colour" format="color" />
+        <attr name="ng_progress_overflow_colour" format="color" />
+        <attr name="ng_target_values" format="reference" />
+        <attr name="ng_values" format="reference" />
+    </declare-styleable>
+</resources>

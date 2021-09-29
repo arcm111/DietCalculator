@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_splashscreen_logo_foreground.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/background_blue_button_rounded_corners.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/background_blue_rounded_corners.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/background_circle_avatar_blue.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/background_light_gray_rounded_bottom_corners.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/background_purple_rounded_bottom_corners.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/background_purple_rounded_top_corners.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/background_units_popupwindow_purple_rounded_corners.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_activities_level_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_age_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_calories_dark.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_calories_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_carbohydrates_dark.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_carbohydrates_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_fat_dark.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_fat_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_fibre_dark.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_fibre_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_height_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_protein_dark.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_protein_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_saturated_fat_dark.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_saturated_fat_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_sugar_dark.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_sugar_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/ic_weight_white.xml" value="0.17792207792207793" />
+        <entry key="app/src/main/res/drawable/splashscreen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_create_recipe.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/content_create_recipe.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/dialog_recipe_edit_title.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_activities_level.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_activities_level_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_calories.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_create_new_recipe.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_diary.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_food_list.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_group_list.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_ingredient_view.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_ingredients.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_macro.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_macro_elments.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_macros_settings.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_metrics_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_my_items.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_my_recipes.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_name_unit.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_nutrients.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_nutrients_section.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_recipe_summary.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_select_ingredients.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_select_ingredients_list.xml" value="0.15394736842105264" />
+        <entry key="app/src/main/res/layout/fragment_settings_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_setup_macros.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/fragment_targets_settings.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/list_item_diary_exercise.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/list_item_diary_food.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/list_item_food.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_item_ingredient.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/list_item_macro_element.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/list_item_recipe.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/popup_window_exercise_options.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/popup_window_new_unit.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/popup_window_unit_options.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/menu/menu_new_recipe.xml" value="0.16666666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

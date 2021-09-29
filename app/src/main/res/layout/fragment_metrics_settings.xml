@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_darkest"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.SettingsActivity.MetricsSettingsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colour_purple_toolbar"
+        android:elevation="2dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:title="@string/personal_details_and_measurements"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:titleTextColor="@android:color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout5"
+        style="@style/IntroBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background_light_gray_rounded_bottom_corners"
+        android:paddingTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_button"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".fragments.SetupActivity.MetricsFragment">
+
+        <NumberPicker
+            android:id="@+id/age_number_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Age:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/genderIconSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/genderIconSwitch" />
+
+        <com.arcm.scalenumberpicker.ScaleNumberPicker
+            android:id="@+id/heightScale"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/weightScale"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderIconSwitch"
+            app:snp_border_width="3dp"
+            app:snp_division_line_height="12dp"
+            app:snp_division_text_margin="2dp"
+            app:snp_max_value="300"
+            app:snp_orientation="VerticalRight"
+            app:snp_subdivision_line_height="8dp"
+            app:snp_subdivisions_count_per_division="10"
+            app:snp_ticks_count_per_subdivision="1"
+            app:snp_unit_label="cm"
+            app:snp_unit_label_margin="8dp"
+            app:snp_unit_label_text_colour="#BBBBBB"
+            app:snp_unit_label_text_size="12sp"
+            app:snp_value="150" />
+
+        <com.arcm.scalenumberpicker.ScaleNumberPicker
+            android:id="@+id/weightScale"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:snp_border_width="3dp"
+            app:snp_curve_height="36dp"
+            app:snp_division_line_height="12dp"
+            app:snp_division_text_margin="14dp"
+            app:snp_max_value="600"
+            app:snp_orientation="HorizontalCircular"
+            app:snp_subdivision_line_height="8dp"
+            app:snp_subdivisions_count_per_division="10"
+            app:snp_tick_value="0.5"
+            app:snp_ticks_count_per_subdivision="1"
+            app:snp_unit_label="kg"
+            app:snp_unit_label_margin="6dp"
+            app:snp_unit_label_text_colour="#BBBBBB"
+            app:snp_unit_label_text_size="12sp" />
+
+        <com.polyak.iconswitch.IconSwitch
+            android:id="@+id/genderIconSwitch"
+            style="@style/IconSwitchStyle.ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:isw_background_color="@color/purple_darker"
+            app:isw_icon_inactive_tint="@color/purple_dark"
+            app:isw_icon_left="@drawable/ic_male_profile_icon"
+            app:isw_icon_padding_horizontal="11dp"
+            app:isw_icon_padding_vertical="3dp"
+            app:isw_icon_right="@drawable/ic_female_profile_icon"
+            app:isw_icon_size="22dp"
+            app:isw_thumb_color="@color/cyan_light"
+            app:isw_thumb_color_alternative="#EF5E80"
+            app:isw_thumb_padding_horizontal="8dp"
+            app:isw_thumb_padding_vertical="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gender_image"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/gender_image_description"
+            android:src="@drawable/ic_male_body_image"
+            app:layout_constraintBottom_toBottomOf="@+id/heightScale"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/heightScale" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="false"
+            android:text="@string/please_specify_your_age_sex_etc"
+            android:textAlignment="center"
+            android:textColor="@color/text_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorAccent_darker"
+        android:text="@string/save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

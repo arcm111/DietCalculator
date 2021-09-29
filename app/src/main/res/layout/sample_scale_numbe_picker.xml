@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.arcm.scalenumberpicker.ScaleNumberPicker
+        android:id="@+id/scaleNumberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:snp_curve_height="80dp"
+        app:snp_division_line_height="12dp"
+        app:snp_max_value="100"
+        app:snp_min_value="0"
+        app:snp_orientation="VerticalRight"
+        app:snp_subdivision_line_height="8dp"
+        app:snp_tick_value="1"
+        app:snp_unit_label="cm"
+        app:snp_unit_label_margin="10dp"
+        app:snp_unit_label_text_colour="#C5C5C5"
+        app:snp_unit_label_text_size="14sp"
+        app:snp_value="56"
+        app:snp_value_text_margin="16dp"
+        app:snp_value_text_size="24sp" />
+
+</LinearLayout>

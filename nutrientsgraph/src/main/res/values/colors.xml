@@ -1,0 +1,8 @@
+<resources>
+    <color name="active_text_colour">#212121</color>
+    <color name="inactive_text_colour">#999999</color>
+    <color name="value_text_colour">#ffffff</color>
+    <color name="bar_cont_colour">#dfe6ee</color>
+    <color name="progress_colour">#3870a1</color>
+    <color name="progress_overflow_colour">#be5246</color>
+</resources>

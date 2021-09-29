@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_light_gray_rounded_bottom_corners"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/save_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background_nutrient_item_white_rounded"
+                android:paddingStart="15dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/group_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/food_name_editText">
+
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="1dp"
+                        android:background="@color/background"
+                        android:contentDescription="@string/drop_down_arrow_image_description"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:src="@drawable/ic_dropdown_arrow" />
+
+                    <ImageView
+                        android:id="@+id/group_imageview"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/background"
+                        android:contentDescription="@string/food_item_group_image_description"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_add_category_dark" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/brand_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/brand"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/group_selector"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/food_name_editText" />
+
+                <EditText
+                    android:id="@+id/food_name_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ellipsize="end"
+                    android:hint="@string/name"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nutrients per 100g:"
+                android:textColor="@color/gray_600"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraint_layout_name" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <LinearLayout
+
+                    android:id="@+id/calories_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_white_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/background_nutrient_calories_thumb"
+                        android:contentDescription="@string/nutrient_icon_description"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_calories_white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/calories"
+                        android:textColor="@color/gray_600" />
+
+                    <TextView
+                        android:id="@+id/calories_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/zero_calories" />
+
+                </LinearLayout>
+
+                <com.arcm.scalenumberpicker.ScaleNumberPicker
+                    android:id="@+id/calories_scalepicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:snp_division_line_height="12dp"
+                    app:snp_max_value="1000"
+                    app:snp_subdivision_line_height="8dp"
+                    app:snp_subdivisions_count_per_division="10"
+                    app:snp_ticks_count_per_subdivision="1"
+                    app:snp_value="0" />
+
+                <LinearLayout
+
+                    android:id="@+id/carbs_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_white_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/background_nutrient_carbohydrates_thumb"
+                        android:contentDescription="@string/nutrient_icon_description"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_carbohydrates_white" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/carbohydrates"
+                        android:textColor="@color/gray_600" />
+
+                    <TextView
+                        android:id="@+id/carbs_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/zero_gram" />
+
+                </LinearLayout>
+
+                <com.arcm.scalenumberpicker.ScaleNumberPicker
+                    android:id="@+id/carbs_scalepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:snp_division_line_height="12dp"
+                    app:snp_subdivision_line_height="8dp"
+                    app:snp_subdivisions_count_per_division="10"
+                    app:snp_tick_value="0.1"
+                    app:snp_ticks_count_per_subdivision="1"
+                    app:snp_value="0" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/sugar_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_white_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/background_nutrient_sugar_thumb"
+                        android:contentDescription="@string/nutrient_icon_description"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_sugar_white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/sugar"
+                        android:textColor="@color/gray_600" />
+
+                    <TextView
+                        android:id="@+id/sugar_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/zero_gram" />
+
+                </LinearLayout>
+
+                <com.arcm.scalenumberpicker.ScaleNumberPicker
+                    android:id="@+id/sugar_scalepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:snp_division_line_height="12dp"
+                    app:snp_subdivision_line_height="8dp"
+                    app:snp_subdivisions_count_per_division="10"
+                    app:snp_tick_value="0.1"
+                    app:snp_ticks_count_per_subdivision="1"
+                    app:snp_value="0" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/fibre_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_white_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/background_nutrient_fibre_thumb"
+                        android:contentDescription="@string/nutrient_icon_description"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_fibre_white" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fibre"
+                        android:textColor="@color/gray_600" />
+
+                    <TextView
+                        android:id="@+id/fibre_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/zero_gram" />
+
+                </LinearLayout>
+
+                <com.arcm.scalenumberpicker.ScaleNumberPicker
+                    android:id="@+id/fibre_scalepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:snp_division_line_height="12dp"
+                    app:snp_subdivision_line_height="8dp"
+                    app:snp_subdivisions_count_per_division="10"
+                    app:snp_tick_value="0.1"
+                    app:snp_ticks_count_per_subdivision="1"
+                    app:snp_value="0" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/fat_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_white_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/background_nutrient_fat_thumb"
+                        android:contentDescription="@string/nutrient_icon_description"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_fat_white" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fat"
+                        android:textColor="@color/gray_600" />
+
+                    <TextView
+                        android:id="@+id/fat_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/zero_gram" />
+
+                </LinearLayout>
+
+                <com.arcm.scalenumberpicker.ScaleNumberPicker
+                    android:id="@+id/fat_scalepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:snp_division_line_height="12dp"
+                    app:snp_subdivision_line_height="8dp"
+                    app:snp_subdivisions_count_per_division="10"
+                    app:snp_tick_value="0.1"
+                    app:snp_ticks_count_per_subdivision="1"
+                    app:snp_value="0" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/sfat_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_white_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/background_nutrient_saturated_fat_thumb"
+                        android:contentDescription="@string/nutrient_icon_description"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_saturated_fat_white" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/saturated_fat"
+                        android:textColor="@color/gray_600" />
+
+                    <TextView
+                        android:id="@+id/sfat_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/zero_gram" />
+
+                </LinearLayout>
+
+                <com.arcm.scalenumberpicker.ScaleNumberPicker
+                    android:id="@+id/sfat_scalepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:snp_division_line_height="12dp"
+                    app:snp_subdivision_line_height="8dp"
+                    app:snp_subdivisions_count_per_division="10"
+                    app:snp_tick_value="0.1"
+                    app:snp_ticks_count_per_subdivision="1"
+                    app:snp_value="0" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/protein_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_white_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/background_nutrient_protein_thumb"
+                        android:contentDescription="@string/nutrient_icon_description"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_protein_white" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/protein"
+                        android:textColor="@color/gray_600" />
+
+                    <TextView
+                        android:id="@+id/protein_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/zero_gram" />
+
+                </LinearLayout>
+
+                <com.arcm.scalenumberpicker.ScaleNumberPicker
+                    android:id="@+id/protein_scalepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:snp_division_line_height="12dp"
+                    app:snp_subdivision_line_height="8dp"
+                    app:snp_subdivisions_count_per_division="10"
+                    app:snp_tick_value="0.1"
+                    app:snp_ticks_count_per_subdivision="1"
+                    app:snp_value="0" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background_nutrient_item_white_rounded"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Units"
+                    app:layout_constraintEnd_toStartOf="@+id/edit_units_imageview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/edit_units_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_edit_black" />
+
+                <TextView
+                    android:id="@+id/units_list_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="g"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView30" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_blue_button_rounded_corners"
+            android:text="Save New Item"
+            android:textColor="#333"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

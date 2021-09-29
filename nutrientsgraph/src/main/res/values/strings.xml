@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carbohydrates_label">CARB</string>
+    <string name="sugar_label">SGR</string>
+    <string name="protein_label">PRTN</string>
+    <string name="fat_label">FAT</string>
+    <string name="saturated_fat_label">SFAT</string>
+    <string name="fibre_label">FBR</string>
+    <string name="gram_unit"> g</string>
+    <integer-array name="example_target_values">
+        <item>300</item>
+        <item>45</item>
+        <item>30</item>
+        <item>120</item>
+        <item>30</item>
+        <item>200</item>
+    </integer-array>
+    <integer-array name="example_values">
+        <item>230</item>
+        <item>21</item>
+        <item>2</item>
+        <item>100</item>
+        <item>40</item>
+        <item>0</item>
+    </integer-array>
+</resources>

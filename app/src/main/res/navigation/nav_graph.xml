@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/NameUnitFragment">
+
+    <fragment
+        android:id="@+id/NameUnitFragment"
+        android:name="com.arcm.dietcalculator.fragments.createrecipeactivity.NameUnitFragment"
+        android:label="@string/new_recipe"
+        tools:layout="@layout/fragment_name_unit">
+
+        <action
+            android:id="@+id/action_NameUnitFragment_to_IngredientsFragment"
+            app:destination="@id/IngredientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/IngredientsFragment"
+        android:name="com.arcm.dietcalculator.fragments.createrecipeactivity.IngredientsFragment"
+        android:label="@string/ingredients"
+        tools:layout="@layout/fragment_ingredients" >
+
+        <action
+            android:id="@+id/action_IngredientsFragment_to_SummaryFragment"
+            app:destination="@id/SummaryFragment" />
+        <action
+            android:id="@+id/action_IngredientsFragment_to_SelectIngredientsFragment"
+            app:destination="@id/SelectIngredientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SummaryFragment"
+        android:name="com.arcm.dietcalculator.fragments.createrecipeactivity.RecipeSummaryFragment"
+        android:label="@string/nutrition"
+        tools:layout="@layout/fragment_recipe_summary" />
+    <fragment
+        android:id="@+id/SelectIngredientsFragment"
+        android:name="com.arcm.dietcalculator.fragments.createrecipeactivity.SelectIngredientsFragment"
+        android:label="Select Ingredients"
+        tools:layout="@layout/fragment_select_ingredients" >
+        <action
+            android:id="@+id/action_SelectIngredientsFragment_to_ingredientViewFragment"
+            app:destination="@id/IngredientViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/IngredientViewFragment"
+        android:name="com.arcm.dietcalculator.fragments.createrecipeactivity.IngredientViewFragment"
+        android:label="Ingredient's Weight" >
+        <action
+            android:id="@+id/action_IngredientViewFragment_to_SelectIngredientsFragment"
+            app:destination="@id/SelectIngredientsFragment"
+            app:popUpTo="@id/SelectIngredientsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_IngredientViewFragment_to_IngredientsFragment"
+            app:destination="@id/IngredientsFragment"
+            app:popUpTo="@id/IngredientsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

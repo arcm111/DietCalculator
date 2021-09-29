@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CaloriesCaption">
+        <attr name="cc_values_textSize" format="dimension" />
+        <attr name="cc_unit_textSize" format="dimension" />
+        <attr name="cc_labels_textSize" format="dimension" />
+        <attr name="cc_primary_colour" format="color" />
+        <attr name="cc_secondary_colour" format="color" />
+        <attr name="cc_target_icon" format="reference|integer" />
+        <attr name="cc_unit_margin" format="dimension" />
+        <attr name="cc_divider_width" format="dimension" />
+        <attr name="cc_divider_margin" format="dimension" />
+        <attr name="cc_icon_padding" format="dimension" />
+        <attr name="cc_icon_size" format="dimension" />
+        <attr name="cc_consumed_value" format="integer" />
+        <attr name="cc_target_value" format="integer" />
+    </declare-styleable>
+</resources>

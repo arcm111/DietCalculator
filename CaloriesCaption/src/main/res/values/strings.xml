@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="consumed_calories_label">Consumed Calories</string>
+    <string name="target_calories_label">Target Calories</string>
+    <string name="unit_kcal">kcal</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="values_textSize">34sp</dimen>
+    <dimen name="unit_textSize">10sp</dimen>
+    <dimen name="labels_textSize">14sp</dimen>
+    <dimen name="unit_margin">6dp</dimen>
+    <dimen name="divider_width">2dp</dimen>
+    <dimen name="divider_margin">10dp</dimen>
+    <dimen name="icon_padding">10dp</dimen>
+    <dimen name="icon_size">18dp</dimen>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_nutrient_item_white_rounded"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/background_nutrient_calories_thumb"
+                android:contentDescription="@string/nutrient_icon_description"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_calories_white" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="@string/textview_default_text"
+                android:textColor="@color/gray_600" />
+
+            <TextView
+                android:id="@+id/calories_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/textview_default_text" />
+
+        </LinearLayout>
+
+        <com.arcm.scalenumberpicker.ScaleNumberPicker
+            android:id="@+id/scalepicker"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_nutrient_item_scalepicker_rounded"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            app:snp_value="0" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

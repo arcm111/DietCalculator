@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Diet Calculator</string>
+    <string name="weight_gain">Weight\nGain\nPer Week</string>
+    <string name="weight_loss">Weight\nLoss\nPer Week</string>
+    <string name="gram_value">%dg</string>
+    <string name="percent_value">%d%%</string>
+    <string name="cm_value">%d cm</string>
+    <string name="kg_integer_value">%d kg</string>
+    <string name="kg_double_value">%.2f kg</string>
+    <string name="progress_bar_value">%1$d/%2$d</string>
+    <string name="start">Start</string>
+    <string name="finish">Finish</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="activity_sedentary">Little to no exercise</string>
+    <string name="activity_light">Exercise 1–2 days a week</string>
+    <string name="activity_moderate">Exercise 3–5 days a week</string>
+    <string name="activity_high">Exercise 6–7 days a week</string>
+    <string name="activity_extreme">Exercise all week 2+ times a day</string>
+    <string name="daily_macro_nutrients_target">Daily Macro Nutrients Target</string>
+    <string name="adjust_knobs">Adjust the white knobs to select your daily macro-nutrients values</string>
+    <string name="zero">0</string>
+    <string name="macro">Macro</string>
+    <string name="percent">Percent</string>
+    <string name="value">Value</string>
+    <string name="welcome_upper_case">WELCOME</string>
+    <string name="welcome_intro_text">Calories counter helps you keep an eye on your daily energy
+        consumption from food (calories) as well as macro nutrients such as protein, fat and
+        carbohydrates absorbed from your diet. It can be a great tool to assist with weight loss
+        and gain by adjusting the amount of calories you consume every day.</string>
+    <string name="intro_image_description">intro image</string>
+    <string name="select_your_physical_activities_level">Select your physical activities level:</string>
+    <string name="sedentary">Sedentary</string>
+    <string name="light">Light</string>
+    <string name="moderate">Moderate</string>
+    <string name="high">High</string>
+    <string name="extreme">Extreme</string>
+    <string name="physical_activities_image_description">physical activities image</string>
+    <string name="choose_daily_calories">Choose your daily calories target</string>
+    <string name="choose_daily_weight_change">Or choose how much weight you would like to lose or
+        gain per week</string>
+    <string name="targets_image_description">targets image</string>
+    <string name="please_specify_your_age_sex_etc">Please specify your age, sex, height and weight
+        to determine the daily amount of calories needed to maintain your current weight.</string>
+    <string name="gender_image_description">gender image</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_icon_description">profile button icon</string>
+    <string name="progress_button_description">progress button icon</string>
+    <string name="home_menu_button_description">home menu button</string>
+    <string name="diary_menu_button_description">diary menu button</string>
+    <string name="macros_menu_button_description">macros menu button</string>
+    <string name="summary_capitals">SUMMARY</string>
+    <string name="chosen_gender_image_description">chosen gender image</string>
+    <string name="personal_details_and_measurements">Personal details and measurements</string>
+    <string name="current_age_image_description">current age</string>
+    <string name="height_image_description">height image</string>
+    <string name="weight_image_description">weight image</string>
+    <string name="activities_level_image_description">activities level image</string>
+    <string name="daily_calories_targets_kcal">Daily Calories Targets (kcal)</string>
+    <string name="example_calories_value">3,450</string>
+    <string name="daily_weight_change_target_kg">Daily weight change target (kg)</string>
+    <string name="example_weight_change_value">+1</string>
+    <string name="daily_macro_nutrients_targets">Daily macro nutrients targets</string>
+    <string name="click_on_unit_for_options">Click on unit for more units options</string>
+    <string name="choose_weight">Choose item\'s weight</string>
+    <string name="save_float_button_description">save button</string>
+    <string name="unknown">Unknown</string>
+    <string name="food_item_title">Food Item\'s Title</string>
+    <string name="drop_down_arrow_image_description">drop down arrow</string>
+    <string name="food_item_group_image_description">food item group</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="add_breakfast_item_image_description">add breakfast item</string>
+    <string name="lunch">Lunch</string>
+    <string name="add_lunch_item_image_description">add lunch item</string>
+    <string name="dinner">Dinner</string>
+    <string name="add_dinner_item_image_description">add dinner item</string>
+    <string name="exercise">Exercise</string>
+    <string name="add_exercise_item_image_description">add exercise item</string>
+    <string name="textview_default_text">TextView</string>
+    <string name="search">Search</string>
+    <string name="calories">Calories</string>
+
+    <string name="carbohydrates">Carbohydrates</string>
+    <string name="sugar">Sugar</string>
+    <string name="fibre">Fibre</string>
+    <string name="protein">Protein</string>
+    <string name="fat">Fat</string>
+    <string name="saturated_fat">Saturated Fat</string>
+    <string name="nutrient_icon_description">nutrient icon</string>
+    <string name="name">Name</string>
+    <string name="brand">Brand</string>
+    <string name="zero_calories">0 kcal</string>
+    <string name="zero_gram">0 g</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="units">Units</string>
+    <string name="add_new_unit_icon">add new unit icon</string>
+    <string name="unit_label">Unit Label</string>
+    <string name="unit_weight_in_grams">Unit Weight in Grams</string>
+    <string name="create_unit">Create Unit</string>
+    <string name="modify_unit">Modify Unit</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="exercise_name">Exercise Name</string>
+    <string name="calories_burnt_kcal">Calories Burnt (kcal)</string>
+    <string name="physical_activities_level">Physical Activities Level</string>
+    <string name="targets_settings">Targets Settings</string>
+    <string name="macros_settings">Macros Settings</string>
+    <string name="my_food_items">My Food Items</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="zero_kg">0 kg</string>
+    <string name="target">Target</string>
+    <string name="zero_percent">0%</string>
+    <string name="title_activity_create_recipe">CreateRecipeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="grams_per_unit">Grams per Unit</string>
+    <string name="unit_name">Unit Name</string>
+    <string name="unit">Unit</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="new_recipe">New Recipe</string>
+
+    <!--  Errors  -->
+    <string name="ingredients_too_few_error">Please Add a minimum of two ingredients!</string>
+    <string name="nutrients">Nutrients</string>
+    <string name="hundred_gram">100 g</string>
+
+</resources>

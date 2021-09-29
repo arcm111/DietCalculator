@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nutrients_names">
+        <item>@string/carbohydrates</item>
+        <item>@string/protein</item>
+        <item>@string/fat</item>
+        <item>@string/saturated_fat</item>
+        <item>@string/sugar</item>
+        <item>@string/fibre</item>
+    </string-array>
+
+    <string-array name="new_item_nutrients_names">
+        <item>@string/calories</item>
+        <item>@string/carbohydrates</item>
+        <item>@string/sugar</item>
+        <item>@string/fibre</item>
+        <item>@string/fat</item>
+        <item>@string/saturated_fat</item>
+        <item>@string/protein</item>
+    </string-array>
+
+    <string-array name="macros_array">
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+        <item>35%</item>
+        <item>40%</item>
+        <item>45%</item>
+        <item>50%</item>
+        <item>55%</item>
+        <item>60%</item>
+        <item>65%</item>
+        <item>70%</item>
+        <item>75%</item>
+        <item>80%</item>
+        <item>85%</item>
+        <item>90%</item>
+        <item>95%</item>
+        <item>100%</item>
+    </string-array>
+    
+    <string-array name="food_groups">
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Meat</item>
+        <item>Nuts</item>
+        <item>Legumes</item>
+        <item>Pulses</item>
+        <item>Dairy</item>
+        <item>Bakery</item>
+        <item>Drinks</item>
+        <item>Snacks</item>
+        <item>Supplements</item>
+        <item>Cooking</item>
+        <item>Fast Food</item>
+        <item>Grains</item>
+        <item>Deserts</item>
+        <item>Other</item>
+    </string-array>
+    
+    <integer-array name="groups_icons_drawables">
+        <item>@drawable/ic_food_item_vegetables</item>
+        <item>@drawable/ic_food_item_fruits</item>
+        <item>@drawable/ic_food_item_meat</item>
+        <item>@drawable/ic_food_item_nuts</item>
+        <item>@drawable/ic_food_item_legumes</item>
+        <item>@drawable/ic_food_item_pulses</item>
+        <item>@drawable/ic_food_item_dairy</item>
+        <item>@drawable/ic_food_item_bakery</item>
+        <item>@drawable/ic_food_item_drinks</item>
+        <item>@drawable/ic_food_item_snacks</item>
+        <item>@drawable/ic_food_item_supplements</item>
+        <item>@drawable/ic_food_item_cooking</item>
+        <item>@drawable/ic_food_item_fast_food</item>
+        <item>@drawable/ic_food_item_grains</item>
+        <item>@drawable/ic_food_item_deserts</item>
+        <item>@drawable/ic_food_item_others</item>
+    </integer-array>
+
+    <integer-array name="macros_piechart">
+        <item>@color/purple</item>
+        <item>@color/group_red</item>
+        <item>@color/colorAccent</item>
+    </integer-array>
+
+</resources>

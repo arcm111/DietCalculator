@@ -1,0 +1,8 @@
+include ':ScaleNumberPicker'
+include ':dietpiechart'
+include ':iconswitch'
+include ':app'
+rootProject.name = "Diet Calculator"
+include ':CaloriesProgressBar'
+include ':CaloriesCaption'
+include ':nutrientsgraph'

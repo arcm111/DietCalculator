@@ -1,0 +1,64 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/comfortaa_regular</item>
+        <item name="colorPrimary">@color/ic_launcher_background</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:windowBackground">@color/color_secondary</item>
+    </style>
+
+    <style name="TextTitleWhiteBig" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginBottom">60dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="IntroBackground">
+        <item name="android:background">@color/gray_light</item>
+        <item name="android:paddingTop">60dp</item>
+        <item name="android:paddingStart">40dp</item>
+        <item name="android:paddingEnd">40dp</item>
+    </style>
+
+    <style name="WhiteNumberPickerDivider" parent="AppTheme">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <style name="AppTheme.FloatingActionButton">
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@drawable/tablayout_background</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="ActivitiesRadioButton" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:buttonTint">@color/cyan_light</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@color/purple_dark</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    
+    <style name="AppTheme.BigButtonBlue">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:backgroundTint">@color/colorAccent_darker</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
